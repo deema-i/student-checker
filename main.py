@@ -1,5 +1,5 @@
 from grading import is_valid_score, classify_score,avgrage_score
-from report_writer import save_report, build_report, score_report
+from report_writer import save_report, build_report, score_report, advice_writer
 
 
 score_array = []
@@ -26,7 +26,8 @@ while True:
             else:
                 score_array.append(score)
                 status = classify_score(score)
-                report = build_report(student_name, score, status)
+                advice = advice_writer(score)
+                report = build_report(student_name, score, status,advice)
                 filename = save_report(student_name, report)
 
                 print(report)

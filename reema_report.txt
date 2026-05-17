@@ -1,8 +1,8 @@
 
 Student Performance Report
 --------------------------
-Student Name: deema
-Score: 35.0
+Student Name: reema
+Score: 3.0
 Status: Faild
 Passed: False
 Advice: Review the basics and seek extra support

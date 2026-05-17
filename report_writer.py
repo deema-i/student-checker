@@ -1,16 +1,28 @@
 from grading import avgrage_score
 
-def build_report(student_name, score, status):
-    report= f"""Student Performance Report
+def build_report(student_name, score, status, advice):
+    report= f"""\nStudent Performance Report
 --------------------------
 Student Name: {student_name}
 Score: {score}
 Status: {status}
+Passed: { "True" if  100 <= score >= 50 else "False"}
+Advice: {advice}
 """
     return report
 
+def advice_writer(score):
+    if score >= 85:
+        return "Keep it up the great work and start exploring advanced exercises"
+    elif score >=70:
+        return "Keep practicing and fix small mistakes."
+    elif score >= 50:
+        return "ou passed, but more practice will help"
+    else:
+        return "Review the basics and seek extra support"
+
 def score_report(score_array):
-    report= f"""Score Report 
+    report= f"""\nScore Report 
 --------------------------
 Average Score: {avgrage_score(score_array)}
 Highest Score: {max(score_array)}

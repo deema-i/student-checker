@@ -1,0 +1,8 @@
+
+Student Performance Report
+--------------------------
+Student Name: nore
+Score: 90.0
+Status: Excelent
+Passed: False
+Advice: Keep it up the great work and start exploring advanced exercises
